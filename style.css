@@ -1,0 +1,35 @@
+body {
+  font-family: sans-serif;
+}
+
+img{
+  width: 100px;
+  height: 100px;
+}
+.face{
+  float: left;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent;
+}
+
+.face:hover {
+  border: solid 10px black;
+}
+
+.greenBorder{
+  border-color: green !important;
+  border-style: dotted !important;
+  border-width: 10px;
+  animation: spinIt;
+  animation-duration: 2s;
+
+}
+
+@keyframes spinIt {
+  from {transform: rotate(0);
+  filter: hue-rotate(0);}
+  to {transform: rotate(720deg);
+  filter: hue-rotate(720deg);}
+
+}
